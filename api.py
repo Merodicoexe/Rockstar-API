@@ -10,7 +10,7 @@ load_dotenv()  # načte .env soubor
 
 IMAP_HOST = "imap.rambler.ru"
 IMAP_PORT = 993
-API_PORT = int(os.getenv("PORT", 5000))  # default 5000
+API_PORT = int(os.getenv("PORT", 4000))  # default 5000
 
 app = Flask(__name__)
 
@@ -117,5 +117,6 @@ def get_codes():
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=4000, debug=True)
+
 
 
